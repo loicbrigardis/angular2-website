@@ -9,11 +9,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var JumbotronComponent = (function () {
     function JumbotronComponent() {
         this.jbtHeading = "My Heading";
         this.jbtText = "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.";
-        this.jbtBtnText = "My BTN Text";
+        this.jbtBtnText = "BTN LINK";
         this.jbtBtnUrl = "#";
     }
     JumbotronComponent.prototype.ngOnInit = function () { };
@@ -21,7 +22,8 @@ var JumbotronComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'jumbotron',
-            templateUrl: 'jumbotron.component.html'
+            templateUrl: 'jumbotron.component.html',
+            directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
     ], JumbotronComponent);

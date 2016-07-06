@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
     moduleId: module.id,
     selector: 'jumbotron',
-    templateUrl: 'jumbotron.component.html'
+    templateUrl: 'jumbotron.component.html',
+    directives: [ROUTER_DIRECTIVES]
 })
 export class JumbotronComponent implements OnInit {
 
@@ -15,7 +17,7 @@ export class JumbotronComponent implements OnInit {
     constructor() { 
         this.jbtHeading = "My Heading";
         this.jbtText = "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.";
-        this.jbtBtnText = "My BTN Text";
+        this.jbtBtnText = "BTN LINK";
         this.jbtBtnUrl = "#";
     }
 

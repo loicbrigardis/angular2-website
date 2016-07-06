@@ -22,7 +22,7 @@ var AppComponent = (function () {
             selector: 'my-app',
             template: "\n  <navbar></navbar>\n  <jumbotron></jumbotron>\n  <div class='container'>\n    <router-outlet></router-outlet>\n  </div>\n  ",
             directives: [router_1.ROUTER_DIRECTIVES, navbar_component_1.NavbarComponent, jumbotron_component_1.JumbotronComponent, home_component_1.HomeComponent, about_component_1.AboutComponent],
-            precompile: [home_component_1.HomeComponent]
+            precompile: [home_component_1.HomeComponent, about_component_1.AboutComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

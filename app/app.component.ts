@@ -16,7 +16,7 @@ import { AboutComponent } from './components/pages/about.component'
   </div>
   `,
   directives: [ROUTER_DIRECTIVES, NavbarComponent, JumbotronComponent, HomeComponent, AboutComponent],
-  precompile: [HomeComponent]
+  precompile: [HomeComponent, AboutComponent]
 })
 
 export class AppComponent { }
